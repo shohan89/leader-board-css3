@@ -121,3 +121,37 @@ Latest Courses
 .fa-clock, .hour {
   color: #FF4A60;
 }
+
+/* ----------------
+  Media Queries 
+  -----------------*/
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+    .topPlayers {
+      margin-bottom: 0;
+    }
+    .players, .courses, .blogs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog {
+      flex-direction: column;
+    }
+    .course {
+      background-color: #ffffff;
+    }
+  }
+  /* Table Devices */
+  @media only screen and (min-width: 768px) and (max-width:992px){
+    .container {
+      width: 100%;
+    }
+    .players, .courses {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .course{
+      background-color: #ffffff;
+    }
+  }
+    
